@@ -1,0 +1,229 @@
+/* Estilo base para el cuerpo de la página, definiendo colores, tipografía, etc. */
+body {
+    background-color: #f4f6f8; /* Color de fondo general*/
+    color: #2c3e50;            /* Color principal del texto */
+    font-family: Arial, sans-serif; /* Tipografía*/
+    margin: 0;                 /* Elimina el margen exterior predeterminado */
+    padding: 0;                /* Elimina el relleno predeterminado */
+}
+
+/* Estilos para el contenedor del encabezado principal */
+header {
+    background-color: #1b2631; /* Fondo oscuro */
+    color: #ffffff;            /* Texto blanco */
+    padding: 20px;             /* Espaciado interno superior, inferior y laterales */
+    text-align: center;        /* Alineación centrada para el título */
+    border-bottom: 4px solid #2980b9; /* Línea decorativa inferior */
+}
+
+/* Ajustes de tamaño y márgenes para el título principal dentro del header */
+header h1 {
+    margin: 0 0 15px 0;        /* Margen inferior para separarlo del menú */
+    font-size: 2em;            /* Tamaño de fuente destacado */
+}
+
+/* Configuración de la lista del menú de navegación */
+nav ul {
+    list-style: none;          /* Elimina los puntos o viñetas de la lista */
+    padding: 0;                /* Elimina el relleno por defecto */
+    margin: 0;                 /* Elimina los márgenes exteriores */
+    display: flex;             /* Organiza los elementos de forma en fila */
+    justify-content: center;   /* Centra los elementos horizontalmente */
+    gap: 20px;                 /* Espacio de separación entre cada opción del menú */
+}
+
+/* Estilos visuales para los enlaces de la barra de navegación */
+nav a {
+    color: #ffffff;            /* Color del texto del enlace */
+    text-decoration: none;     /* Quita el subrayado predeterminado */
+    background-color: #2980b9; /* Color de fondo tipo botón */
+    padding: 10px 15px;        /* Relleno interno del botón*/
+    border-radius: 5px;        /* Esquinas redondeadas del botón */
+    display: inline-block;     /* Permite aplicar padding */
+}
+
+/* Efecto visual interactivo al pasar el cursor sobre los enlaces del menú */
+nav a:hover {
+    background-color: #3498db; /* Cambia a un tono de azul más claro */
+    color: #f1c40f;            /* Cambia el color del texto a un tono amarillo */
+}
+
+
+/* Contenedor principal de la página, limita el ancho máximo y lo centra */
+main {
+    max-width: 800px;          /* Ancho máximo del contenedor */
+    margin: 30px auto;         /* Centra el main horizontalmente con margen superior/inferior */
+    padding: 0 20px;           /* Relleno lateral para pantallas pequeñas */
+}
+
+/* Estilos en caja para cada sección del contenido */
+section {
+    background-color: #ffffff; /* Fondo blanco */
+    margin-bottom: 25px;       /* Separación vertical entre una sección y otra */
+    padding: 25px;             /* Relleno interno de la sección */
+    border-radius: 8px;        /* Redondeo de las esquinas de la caja */
+    border: 1px solid #d5dbdb; /* Borde sutil alrededor de la sección */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sombra ligera para dar profundidad */
+}
+
+/* Estilos para los subtítulos (h2) de las secciones */
+h2 {
+    color: #1b2631;            /* Color oscuro alineado */
+    border-bottom: 2px solid #eaeded; /* Línea divisoria inferior */
+    padding-bottom: 8px;       /* Espacio entre el texto y la línea inferior */
+    margin-top: 0;             /* Elimina el margen superior por defecto */
+}
+
+/* Estilos para los párrafos de texto */
+p {
+    line-height: 1.6;          /* Altura de línea */
+    text-align: justify;       /* Justifica el texto */
+}
+
+/* Estilos y alineación para las imágenes del sitio */
+img {
+    display: block;            /* Convierte la imagen en elemento de bloque para centrarla */
+    margin: 15px auto;         /* Centra la imagen horizontalmente con márgenes */
+    border-radius: 6px;        /* Esquinas redondeadas en la imagen */
+    border: 2px solid #eaeded; /* Borde decorativo alrededor de la imagen */
+    width: 250px;              /* Tamaño de ancho definido */
+    height: auto;              /* Mantiene la proporción original de la altura */
+}
+
+
+/* Margen superior para separar el formulario del contenido previo */
+form {
+    margin-top: 20px;
+}
+
+/* Contenedor individual para cada campo del formulario */
+form div {
+    margin-bottom: 15px;       /* Espaciado vertical entre campos del formulario */
+}
+
+/* Etiquetas de texto para los campos del formulario */
+label {
+    display: block;            /* Hace que la etiqueta ocupe su propia línea */
+    margin-bottom: 5px;        /* Espacio entre la etiqueta y su campo de entrada */
+    font-weight: bold;         /* Texto en negrita para mayor claridad */
+}
+
+/* Estilos generales para campos de texto y correo electrónico */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;               /* Ocupa todo el ancho disponible del contenedor */
+    padding: 10px;             /* Relleno interno */
+    border: 1px solid #bdc3c7; /* Borde gris */
+    border-radius: 4px;        /* Esquinas redondeadas del campo */
+    box-sizing: border-box;    /* Incluye el padding y bordes dentro del ancho total */
+    font-family: Arial, sans-serif; /* Mantiene la tipografía uniforme */
+}
+
+/* Ajustes específicos para el campo de área de texto de mensaje */
+textarea {
+    height: 100px;             /* Altura inicial fija para el cuadro de mensaje */
+    resize: vertical;          /* Permite al usuario redimensionar solo hacia abajo */
+}
+
+/* Estilos base para el botón de envío del formulario */
+button[type="submit"] {
+    background-color: #27ae60; /* Color de fondo verde */
+    color: white;              /* Color de texto blanco */
+    padding: 10px 20px;        /* Relleno interno */
+    border: none;              /* Elimina el borde predeterminado del botón */
+    border-radius: 4px;        /* Esquinas redondeadas */
+    cursor: pointer;           /* Cambia el cursor a una mano al pasar por encima */
+    font-size: 1em;            /* Tamaño de fuente legible */
+    font-weight: bold;         /* Texto en negrita */
+}
+
+/* Efecto al pasar el cursor sobre el botón de envío */
+button[type="submit"]:hover {
+    background-color: #2ecc71; /* Tono de verde más claro */
+}
+
+/* Estilos para la sección inferior del sitio web */
+footer {
+    background-color: #1b2631; /* Fondo oscuro */
+    color: #ffffff;            /* Texto blanco */
+    text-align: center;        /* Centra todo el contenido del pie de página */
+    padding: 20px;             /* Relleno interno general */
+    margin-top: 40px;          /* Margen superior */
+}
+
+/* Estilos para el título del pie de página */
+footer h3 {
+    margin: 0 0 10px 0;        /* Margen inferior para separar del texto de copyright */
+}
+
+/* Estilos específicos para el texto dentro del footer */
+footer p {
+    text-align: center;        /* Asegura que el párrafo esté centrado */
+    margin: 0;                 /* Elimina márgenes extra */
+    color: #bdc3c7;            /* Color gris claro para suavizar la lectura del copyright */
+}
+
+
+/*////////////////////////////////////*/
+
+
+/* Ampliamos los estilos generales para abarcar los nuevos tipos de inputs y el select */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Ajustes para checkboxes y radio buttons para que no ocupen el 100% del ancho */
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+    transform: scale(1.1); /* Hace los cuadritos un poco más grandes */
+}
+
+/* Estilo para que las opciones de radio/checkbox se vean alineadas horizontalmente */
+.opcion-inline {
+    display: inline-flex;
+    align-items: center;
+    font-weight: normal; /* Sobrescribe la negrita de los label generales */
+    margin-right: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* Contenedor especial para grupos de radio y checkbox */
+.grupo-opciones {
+    background-color: #f8f9f9;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #eaeded;
+}
+
+/* Estilos para la caja de mensajes de error de validación */
+.alerta-error {
+    background-color: #fadbd8; /* Rojo muy claro */
+    color: #c0392b; /* Texto rojo oscuro */
+    border: 1px solid #e74c3c;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: none; /* Oculto por defecto, se enseñará en caso de caer en error*/
+}
+
+.alerta-error p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    font-weight: bold;
+}
