@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const pais = document.getElementById('pais').value;
         const terminos = document.getElementById('terminos').checked;
         
-        // Para botones de radio, buscamos cuál está marcado (checked)
+        // Para botones de radio, buscamos cuál está marcado 
         const generoSeleccionado = document.querySelector('input[name="genero"]:checked');
 
         // 4. Validaciones de lógica
